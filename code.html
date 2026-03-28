@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Noto+Serif:wght@400;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script type="module" src="./js/index.js"></script>
+ 
+</head>
+
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary">
+  <!-- TopAppBar from JSON -->
+ <header class="fixed top-0 w-full z-50 bg-[#0e0e0e]/90 backdrop-blur-xl border-b border-white/5 flex justify-between items-center px-6 md:px-12 h-20">
+
+  <div class="flex justify-between items-center gap-2 md:gap-4">
+    <img alt="Bon Apettit Logo" class="h-10 md:h-12 w-auto object-contain brightness-110" src="./img/logo.png"/>
+    <h1 class="md:gap-2 text-[#acabaa] uppercase text-[10px] md:text-sm">RETAURANTE BON APETTIT</h1>
+  </div>
+
+  <button class="md:hidden text-primary">
+    <span class="material-symbols-outlined">language</span>
+  </button>
+
+  
+</header>
+  <main class="pt-24 pb-24 md:pb-0 max-w-screen-xl mx-auto">
+    <!-- Hero Section -->
+    <section class="mb-16 md:mb-24">
+      <div class="relative w-full h-[353px] rounded-xl overflow-hidden mb-8 shadow-2xl">
+        <img class="w-full h-full object-cover"
+          data-alt="moody high-end restaurant interior with dark stone walls, dim ambient lighting, and elegant table setting with silver cutlery"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNUiRE2dbCLrRn-cH1_w6I4YMpnCGUWUBs2LR7N8wEEiT7aOMStz4px06LGzqSQWPv9_pYP0NtrekB388RfTLgnZRqJDlJJQ1R5krzxyScZBvN0HG9Qdk8EG6iBp8h_6kgxPL5N7hT_qask1fv13lxSZIBIRYo6LQGb3VErtDhBY52RPelgmWk6_K0QWzOhCa1SJQ3kzke4YOZdaAoWfsepOG4CaPOvhNPEUy7KeOLmK7yKaD9e7uDqQu39U-haGfBs7RlDbsR" />
+        <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+        <div class="absolute bottom-6 left-6">
+          <h2 class="font-headline text-4xl md:text-6xl text-primary tracking-tight">Nuestro<br/>menú</h2>
+        </div>
+      </div>
+    </section>
+   
+    <section class="mb-16 md:mb-24"  id="entradas">
+      <div class="flex items-baseline gap-4 mb-10">
+        <h3 class="font-headline text-3xl tracking-widest text-primary uppercase">Entradas</h3>
+        <div class="h-px flex-grow bg-outline-variant/30"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Product Card -->
+        <div class="group">
+          <div class="flex flex-col gap-4">
+            <div
+              class="aspect-[16/9] w-full rounded-lg overflow-hidden bg-surface-container-low transition-transform duration-500 group-hover:scale-[1.02]">
+              <img class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all"
+                data-alt="gourmet appetizer of thinly sliced scallops with microgreens and citrus vinaigrette on a dark ceramic plate"
+                src="https://imgs.search.brave.com/8F7vC22dGktSRnNvXfwRx7xjVslKmpBxK7FVckO-luk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE2/MTY3NzAwOC9lcy9m/b3RvL2VtcGFuYWRh/cy1mcml0YXMtbGF0/aW5vYW1lcmljYW5h/cy1jb24tc2Fsc2Fz/LWRlLXRvbWF0ZS15/LWFndWFjYXRlLXZp/c3RhLXN1cGVyaW9y/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1KbVVkOEx4YXhD/T3BSWktXcENOY1ZH/RzZraC13d0o5WDZM/TExWWnF4emc0PQ" />
+            </div>
+            <div class="flex justify-between items-start">
+              <div >
+                <h4 class="font-headline text-xl text-on-surface mb-1">Empanadas fritas </h4>
+                <p class="font-body text-on-surface-variant text-sm max-w-[80%] leading-relaxed">Con variedad de llenos: pollo, carne, jamón y queso</p>
+              </div>
+              <span class="font-body text-primary text-lg tracking-tight">$24</span>
+            </div>
+          </div>
+        </div>
+        <div class="group">
+          <div class="flex flex-col gap-4">
+            <div
+              class="aspect-[16/9] w-full rounded-lg overflow-hidden bg-surface-container-low transition-transform duration-500 group-hover:scale-[1.02]">
+              <img class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all"
+                data-alt="crispy tempura tiger prawns served with a spicy aioli and garnished with toasted sesame seeds"
+                src="https://imgs.search.brave.com/Lr8MY8-FOSBZbUCS7bzfAICV3akymLIslVG7Dt-PDSo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS1jZG4udHJpcGFk/dmlzb3IuY29tL21l/ZGlhL3Bob3RvLW8v/MmIvYmEvOWQvZDkv/cGljYWRhLXRyYWRp/Y2lvbmFsLWZpYW1i/cmVzLmpwZw"/>
+            </div>
+            <div class="flex justify-between items-start">
+              <div>
+                <h4 class="font-headline text-xl text-on-surface mb-1">Picada completa</h4>
+                <p class="font-body text-on-surface-variant text-sm max-w-[80%] leading-relaxed">Nuestra mejor seleccion de fiambre</p>
+              </div>
+              <span class="font-body text-primary text-lg tracking-tight">$19</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section: Plato Principal -->
+    <section class="mb-16 md:mb-24" id="principales">
+      <div class="flex items-baseline gap-4 mb-10">
+        <h3 class="font-headline text-3xl tracking-widest text-primary uppercase">Plato Principal</h3>
+        <div class="h-px flex-grow bg-outline-variant/30"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Product Card -->
+        <div class="group">
+          <div class="flex flex-col gap-4">
+            <div
+              class="aspect-[16/9] w-full rounded-lg overflow-hidden bg-surface-container-low transition-transform duration-500 group-hover:scale-[1.02]">
+              <img class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all"
+                data-alt="gourmet appetizer of thinly sliced scallops with microgreens and citrus vinaigrette on a dark ceramic plate"
+                src="https://imgs.search.brave.com/8GJYb2Et7CjbaYiZ9e-yRui_Clt9NgUK3NMrkmkBMsA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMTU1/NjY5OC9wZXhlbHMt/cGhvdG8tMTU1NjY5/OC5qcGVnP2F1dG89/Y29tcHJlc3MmY3M9/dGlueXNyZ2ImZHBy/PTEmdz01MDA" />
+            </div>
+            <div class="flex justify-evenly items-start">
+              <div>
+                <h4 class="font-headline text-xl text-on-surface mb-1">Hamburguesa Completa</h4>
+                <p class="font-body text-on-surface-variant text-sm max-w-[80%] leading-relaxed">Pan brioche artesanal, tomate, lechuga, huevo, panceta, queso cheddar</p>
+              </div>
+              <span class="font-body text-primary text-lg tracking-tight">$24</span>
+            </div>
+          </div>
+        </div>
+        <div class="group">
+          <div class="flex flex-col gap-4">
+            <div
+              class="aspect-[16/9] w-full rounded-lg overflow-hidden bg-surface-container-low transition-transform duration-500 group-hover:scale-[1.02]">
+              <img class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all"
+                data-alt="crispy tempura tiger prawns served with a spicy aioli and garnished with toasted sesame seeds"
+                src="https://imgs.search.brave.com/PfS40uuEA68f2g-JMWXe12aedufeBB7XiKOgmoNA3DM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMw/MjQzNjMyNi9lcy9m/b3RvL2NvbWlkYS1j/aGF0YXJyYS1oYW1i/dXJndWVzYXMtY2Fz/ZXJhcy1kZS1jYXJu/ZS1kZS1yZXMtc29i/cmUtZm9uZG8tZGUt/bWFkZXJhLXZpbnRh/Z2UuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVZDLXVOWUY2/VUd5U3NkN0lEVUZw/Y2o3dk9QbldjRmpv/UjMxRzJ3NmYyTlU9"/>
+            </div>
+            <div class="flex justify-between items-start">
+              <div>
+                <h4 class="font-headline text-xl text-on-surface mb-1">Hamburguesa de la casa</h4>
+                <p class="font-body text-on-surface-variant text-sm max-w-[80%] leading-relaxed">pan brioche, tomate, lechuga, huevo frito, panceta, queso cheddar y un aderezo especial</p>
+              </div>
+              <span class="font-body text-primary text-lg tracking-tight">$19</span>
+            </div>
+          </div>
+        </div>
+        <div class="group">
+          <div class="flex flex-col gap-4">
+            <div
+              class="aspect-[16/9] w-full rounded-lg overflow-hidden bg-surface-container-low transition-transform duration-500 group-hover:scale-[1.02]">
+              <img class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all"
+                data-alt="crispy tempura tiger prawns served with a spicy aioli and garnished with toasted sesame seeds"
+                src="https://imgs.search.brave.com/dQVymaR8PSLtsoaIz9pWWPWUOxh9c12B-M8ijMIcc38/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAzLzc3LzM4Lzg1/LzM2MF9GXzM3NzM4/ODUzMV92V0xMclpK/UU4zc1ZpSUNUaVg5/Y250WTdkc1o4MUJO/bS5qcGc"/>
+            </div>
+            <div class="flex justify-between  items-start">
+              <div>
+                <h4 class="font-headline text-xl text-on-surface mb-1">Milanesa a la napolitana</h4>
+                <p class="font-body text-on-surface-variant text-sm max-w-[80%] leading-relaxed">La mejor selección de carne Argentina, con salsa de la mejor selección de tomates organícos y la mejor mozzarella</p>
+              </div>
+              <span class="font-body text-primary text-lg tracking-tight">$19</span>
+            </div>
+          </div>
+        </div>
+        <div class="group">
+          <div class="flex flex-col gap-4">
+            <div
+              class="aspect-[16/9] w-full rounded-lg overflow-hidden bg-surface-container-low transition-transform duration-500 group-hover:scale-[1.02]">
+              <img class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all"
+                data-alt="crispy tempura tiger prawns served with a spicy aioli and garnished with toasted sesame seeds"
+                src="https://imgs.search.brave.com/TsI35VchEqN8EIGvwruGEh0sRCklu4b-R7dbqHjnZZE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/LmJvbnZpdmV1ci5j/b20vc2VydmlyLWxv/cy1zb3JyZW50aW5v/cy1jb24tbGEtc2Fs/c2EtbWFyaW5hcmEu/anBn"/>
+            </div>
+            <div class="flex justify-evenly items-start">
+              <div>
+                <h4 class="font-headline text-xl text-on-surface mb-1">Sorrentinos con salsa Marinara</h4>
+                <p class="font-body text-on-surface-variant text-sm max-w-[80%] leading-relaxed"></p>
+              </div>
+              <span class="font-body text-primary text-lg tracking-tight">$19</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section: Postres -->
+    <section id="postres" class="mb-16 md:mb-24" >
+      <div class="flex items-baseline gap-4 mb-10">
+        <h3 class="font-headline text-3xl tracking-widest text-primary uppercase">Postres</h3>
+        <div class="h-px flex-grow bg-outline-variant/30"></div>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+        <div class="text-center group">
+          <div
+            class="aspect-square rounded-full overflow-hidden mb-4 border-2 border-transparent group-hover:border-primary transition-all p-1">
+            <img class="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all"
+              data-alt="decadent chocolate fondant with a molten center being broken with a silver spoon"
+              src="https://imgs.search.brave.com/cs2FoNLUA51sdMmAAcQzrlRwWTYo6Br8NyhRfXQepN8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjYv/NTE2LzE5NC9zbWFs/bC9kZWxpY2lvdXMt/Zmxhbi1kYXJrLWJh/Y2tncm91bmQtd2l0/aC1lbXB0eS1zcGFj/ZS1mb3ItdGV4dC1m/cmVlLXBob3RvLmpw/Zw" />
+          </div>
+          <h5 class="font-headline text-md text-on-surface">Flan casero</h5>
+          <p class="text-primary text-sm mt-1">$14</p>
+        </div>
+        <div class="text-center group">
+          <div
+            class="aspect-square rounded-full overflow-hidden mb-4 border-2 border-transparent group-hover:border-primary transition-all p-1">
+            <img class="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all"
+              data-alt="classic vanilla panna cotta topped with fresh berries and a sprig of mint"
+              src="https://imgs.search.brave.com/5Pv72a3_bkCyoxWHKbQvcSXL-7WIUOu9YijikmbfshU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/YmxvZy5wYXVsaW5h/Y29jaW5hLm5ldC93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyMC8w/MS90aXJhbWlzdS1j/b24tdmFpbmlsbGFz/LWZhY2lsLXktZWNv/bm9taWNvLTE3NDA0/ODM5MjMuanBn" />
+          </div>
+          <h5 class="font-headline text-md text-on-surface">Tiramisú</h5>
+          <p class="text-primary text-sm mt-1">$12</p>
+        </div>
+        <div class="text-center group">
+          <div
+            class="aspect-square rounded-full overflow-hidden mb-4 border-2 border-transparent group-hover:border-primary transition-all p-1">
+            <img class="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all"
+              data-alt="elegant lemon tart with toasted meringue peaks on a dark plate"
+              src="https://imgs.search.brave.com/-y6hII2VQbAxgApF9oxBogL5OGvvuNAcz5lRt13sHVQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5haXJlZGVzYW50/YWZlLmNvbS5hci9w/LzczMWQ3YjI5MGRm/ZWI1ZmM0ZWE3NGM5/M2E1NTAwOGQyL2Fk/anVudG9zLzI2OC9p/bWFnZW5lcy8wMDMv/NzkwLzAwMDM3OTAw/MjMvMTIwMHgwL3Nt/YXJ0L3Bvc3RyZS1k/b24tcGVkcm8tbGEt/cmVjZXRhLWZhY2ls/LXktZGVsaWNpb3Nh/LXBvY29zLWluZ3Jl/ZGllbnRlcy5wbmc" />
+          </div>
+          <h5 class="font-headline text-md text-on-surface">Don Pedro</h5>
+          <p class="text-primary text-sm mt-1">$13</p>
+        </div>
+        <div class="text-center group">
+          <div
+            class="aspect-square rounded-full overflow-hidden mb-4 border-2 border-transparent group-hover:border-primary transition-all p-1">
+            <img class="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all"
+              data-alt="artisan cheese platter with grapes, walnuts, and crackers"
+              src="https://imgs.search.brave.com/3mrRjMK3-HQ6jG55ijc7f2WGInIyxB2a-KdueMs3o6Q/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA5LzUwLzEzLzUy/LzM2MF9GXzk1MDEz/NTIxOF9XSnlHbXVY/czJ1MUFzU3dKaEls/NkVROEVJRVgxcDAy/Zy5qcGc" />
+          </div>
+          <h5 class="font-headline text-md text-on-surface">Chocotorta</h5>
+          <p class="text-primary text-sm mt-1">$22</p>
+        </div>
+      </div>
+    </section>
+    <section id="bebidas" class="mb-16 md:mb-24" >
+      <div class="flex items-baseline gap-3 mb-10">
+        <h3 class="font-headline text-3xl tracking-widest text-primary uppercase">Bebidas</h3>
+        <div class="h-px flex-grow bg-outline-variant/30"></div>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-8">
+        <div class="text-center group">
+          <div
+            class="aspect-square rounded-full overflow-hidden mb-4 border-2 border-transparent group-hover:border-primary transition-all p-1">
+            <img class="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all"
+              data-alt="decadent chocolate fondant with a molten center being broken with a silver spoon"
+              src="https://imgs.search.brave.com/V5O9EC9awRo7ONB93sYuLzCNIoZzUaVePO4ogqZRnlo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTM2/ODY3OTM0OC9lcy9m/b3RvL2dhZmFzLWRl/LXJlZnJlc2NvLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz02/VFZ5dk8zYTBVai1S/elRqNFFyeVA0SUdF/MFNkVlFweWlMRHpE/eEZkTXVrPQ" />
+          </div>
+          <h5 class="font-headline text-md text-on-surface">Bebidas sin Alcohol</h5>
+          <p class="text-primary text-sm mt-1">$14</p>
+        </div>
+        <div class="text-center group">
+          <div
+            class="aspect-square rounded-full overflow-hidden mb-4 border-2 border-transparent group-hover:border-primary transition-all p-1">
+            <img class="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all"
+              data-alt="classic vanilla panna cotta topped with fresh berries and a sprig of mint"
+              src="https://imgs.search.brave.com/6m_Uu8JedKpj37JadBDtAKL8JNE4mssibHrKPWxn3TI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTEv/NTk5LzQ2Mi9zbWFs/bC9nbGFzc2VzLW9m/LWxpZ2h0LWJlZXIt/d2l0aC1iYXJsZXkt/b24td29vZGVuLXRh/YmxlLXR3by1nbGFz/cy1vZi1iZWVyLXdp/dGgtd2hlYXQtb24t/d29vZGVuLXRhYmxl/LXZpbnRhZ2Utc3R5/bGUtY29sb3ItZWZm/ZWN0LXBob3RvLmpw/Zw" />
+          </div>
+          <h5 class="font-headline text-md text-on-surface">Cervezas</h5>
+          <p class="text-primary text-sm mt-1">$12</p>
+        </div>
+        <div class="text-center group">
+          <div
+            class="aspect-square rounded-full overflow-hidden mb-4 border-2 border-transparent group-hover:border-primary transition-all p-1">
+            <img class="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all"
+              data-alt="elegant lemon tart with toasted meringue peaks on a dark plate"
+              src="https://imgs.search.brave.com/WAv56d9K2KJoNelleKJkIciE_xq0oVDXthuTODezMpQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTM4/Nzg3MzY5MS9lcy9m/b3RvL2JvdGVsbGEt/ZGUtdmluby15LWRl/Y2FudGFkb3ItZGUt/Y29wYS1kZS12aW5v/LXNvYnJlLW1lc2Et/ZGUtbWFkZXJhLXIl/QzMlQkFzdGljYS1l/c3BhY2lvLWRlLWNv/cGlhLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1fLUNDSkhB/VE00T0kwd1FWTWRQ/Z3dxbUZUX0FHLVV3/bVcyOUVpRWZVODg0/PQ" />
+          </div>
+          <h5 class="font-headline text-md text-on-surface">Vinos</h5>
+          <p class="text-primary text-sm mt-1">$13</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- BottomNavBar from JSON -->
+  <nav class="fixed bottom-0 md:top-0 md:bottom-auto left-0 w-full z-50
+            flex justify-around md:justify-end items-center
+            h-16 md:h-20
+            px-4 md:px-12
+            bg-[#191a1a]/90 backdrop-blur-lg
+            border-t md:border-t-0 md:border-b border-[#484848]/20">
+
+  <!-- Bebidas -->
+  <a href="#bebidas"
+     class="nav-item flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 text-[#acabaa] uppercase text-[10px] md:text-sm transition-all">
+    
+    <span class="material-symbols-outlined text-[22px] md:hidden">local_bar</span>
+    <span>Bebidas</span>
+  </a>
+
+  <!-- Entradas -->
+  <a href="#entradas"
+     class="nav-item flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 text-[#acabaa] uppercase text-[10px] md:text-sm transition-all">
+    
+    <span class="material-symbols-outlined text-[22px] md:hidden">flatware</span>
+    <span>Entradas</span>
+  </a>
+
+  <!-- Principales (activo ejemplo) -->
+  <a href="#principales"
+     class="nav-item active flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 text-[#c6c6c6] uppercase text-[10px] md:text-sm transition-all">
+    
+    <span class="material-symbols-outlined text-[22px] md:hidden">restaurant</span>
+    <span>Principales</span>
+  </a>
+
+  <!-- Postres -->
+  <a href="#postres"
+     class="nav-item flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 text-[#acabaa] uppercase text-[10px] md:text-sm transition-all">
+    
+    <span class="material-symbols-outlined text-[22px] md:hidden">icecream</span>
+    <span>Postres</span>
+  </a>
+
+</nav>
+  <!-- Floating Order Summary (Task: Family Friendly / Professional) -->
+  <div class="fixed bottom-20 left-1/2 -translate-x-1/2 w-[calc(100%-3rem)] max-w-md bg-surface-container-highest/95 backdrop-blur-xl rounded-full p-2 flex items-center justify-between border border-outline-variant/30 shadow-[0_32px_64px_-15px_rgba(0,0,0,0.4)] z-40">
+    <div class="flex items-center gap-3 pl-4">
+      <span class="material-symbols-outlined text-primary">shopping_basket</span>
+      <span class="font-body text-sm font-medium">3 Items Selected</span>
+    </div>
+    <button
+      class="bg-primary text-on-primary px-6 py-2.5 rounded-full text-sm font-semibold tracking-wide flex items-center gap-2">
+      Order Now
+      <span class="material-symbols-outlined text-sm">arrow_forward</span>
+    </button>
+  </div>
+</body>
+
+</html>
